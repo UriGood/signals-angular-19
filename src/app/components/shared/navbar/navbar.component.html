@@ -1,0 +1,27 @@
+<style>
+    nav{
+        display: flex;
+        justify-content: space-around;
+        background-color: #212121;
+        color: white;
+        padding: 10px;
+    }
+
+    nav a{
+        color: white;
+        text-decoration: none;
+    }
+    nav a.active{
+       color: aquamarine; 
+    }
+
+</style>
+
+<nav>
+    <a routerLink="/" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active">Contador</a>
+    <a [routerLink]="['/hero']" [routerLinkActive]="'active'">Hero</a>
+    <a [routerLink]="['/dragonball']" [routerLinkActive]="'active'">Dragon ball</a>
+    <a routerLink="/dragonball-super" routerLinkActive="active">Dragon ball Super</a>
+
+    <!-- Otros -->
+</nav>
